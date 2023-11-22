@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#page1 {
+    height: 100vh;
+    width: 100%;
+    background-color: #DF4B05;
+}
+
+.dropdownmenu ul {
+    background: gray;
+    list-style: none;
+    width: 100%;
+}
+
+.dropdownmenu li {
+    float: left;
+    position: relative;
+    width: auto;
+}
+
+.dropdownmenu a {
+    background: #30A6E6;
+    color: #FFFFFF;
+    display: block;
+    font: bold 12px/20px sans-serif;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease;
+}
+
+.dropdownmenu li:hover a {
+    background: #000000;
+}
+
+body {
+    background-color: #df4b05;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+.login-box {
+    width: 80%; /* Adjusted width for responsiveness */
+    max-width: 320px; /* Added maximum width for larger screens */
+    height: 430px;
+    background: #37474f;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #cfd8dc;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+/* Media Query for Mobile Devices */
+@media only screen and (max-width: 600px) {
+    .login-box {
+        width: 90%; /* Adjusted width for smaller screens */
+    }
+   
+}
+
+@media only screen and (max-width: 370px) {
+    .dropdownmenu a{
+        padding: 1vw 2.5vw;
+    
+        }
+
+}
+.login-title {
+    display: block;
+    text-align: center;
+    margin: 60px 0 20px 0;
+    text-transform: capitalize;
+    font-weight: 100;
+}
+
+.input-field {
+    width: 100%;
+    box-sizing: border-box;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 1px solid #cfd8dc;
+    margin: 0 0 20px 0;
+    color: #cfd8dc;
+}
+
+.btn-submit {
+    background: #ff8f00;
+    color: #cfd8dc;
+    height: 40px;
+    width: 100%;
+    margin: 20px 0;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    text-transform: capitalize;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.btn-submit:hover {
+}
+
+.link-login {
+    display: block;
+    float: right;
+    color: #cfd8dc;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+.link-login:hover {
+    color: #ffa000;
+    margin-right: -7px;
+    transition: .8s ease;
+}
+
+.link-signup {
+    display: block;
+    float: left;
+    color: #cfd8dc;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+.link-signup:hover {
+    color: #ffa000;
+    margin-left: -7px;
+    transition: .8s ease;
+}

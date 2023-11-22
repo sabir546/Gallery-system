@@ -1,0 +1,216 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+html,body{
+height: 100%;
+width: 100%; 
+}
+#page1{
+    height: 100vh;
+    width: 100%;
+    background-color:#DF4B05;
+}
+
+/*FONT*/
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300);
+
+/*ICON*/
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+
+/*ANIMATE*/
+@import url(//daneden.github.io/animate.css/animate.min.css);
+@import url(https://jaruwat.pohong.me/theme/default/css/bubbles.css);
+
+body {
+  margin: 0;  
+  line-height: 1.5;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: left;
+  font-weight: 300;
+  color: white;
+  background-color: #0c0a1e;
+   -webkit-animation: op 3s; /* Safari and Chrome */
+  -moz-animation: op 3s; /* Firefox */
+  -ms-animation: op 3s; /* Internet Explorer */
+  -o-animation: op 3s; /* Opera */
+  animation: op 3s;
+}
+
+.bg {  
+  -webkit-animation: bg-fadein 20s; /* Safari and Chrome */
+  -moz-animation: bg-fadein 20s; /* Firefox */
+  -ms-animation: bg-fadein 20s; /* Internet Explorer */
+  -o-animation: bg-fadein 20s; /* Opera */
+  animation: bg-fadein 20s;
+  opacity: 0.5;
+  content: "";
+  background: url(https://jaruwat.pohong.me/theme/default/bg.png);  
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  filter: blur(10px);
+}
+
+.container {
+  -webkit-animation: fadein 2s; /* Safari and Chrome */
+  -moz-animation: fadein 2s; /* Firefox */
+  -ms-animation: fadein 2s; /* Internet Explorer */
+  -o-animation: fadein 2s; /* Opera */
+  animation: fadein 2s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% ,-50%);
+  background-color:#37474F;
+  padding: 5px;
+  border-radius: 20px;
+  width: 300px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  z-index: 2000;
+  height: 60vh;
+}
+
+.container a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 50px;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-put;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 0;
+  
+}
+
+.container a:hover {
+  text-shadow: 2px 2px 4px #10707f;
+}
+
+.container hr{
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  margin-left: 0;
+  margin-right: 0;
+  border: 0;
+  border-top: 1px solid rgba(0,0,0, 0.2);
+}
+
+.container input {
+    width: 80%;
+    box-sizing: border-box;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 1px solid #cfd8dc;
+    margin: 0 0 20px 0;
+    color: #cfd8dc;
+  }
+
+.fa-ic { 
+  position: absolute;
+  top: 8px;
+  left: 20px;
+  font-size: 25px;
+}
+
+.container input:hover{
+  text-indent: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.container input:focus{
+  text-indent: 0px;
+  width: 85%;
+  color: black;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.container input::placeholder {
+		color: #f8f8f8;
+    -webkit-transition-duration: 0.25s;
+    transition-duration: 0.25s;
+	}
+
+.container input:focus::placeholder {
+		color: rgba(255, 255, 255, 0);
+	}
+
+.a-link a {
+  color: #fff;
+  font-size: 17px;
+  line-height: 1.5;
+  font-weight: 300;
+  -webkit-transition-duration: 0.20s;
+}
+
+.a-link a:hover {
+  line-height: 1.5;
+  font-weight: 300;
+  color: #57F5FF;
+  text-shadow: 1px 1px 4px black;
+}
+
+.container button {
+    background: #ff8f00;
+    color: #cfd8dc;
+    height: 40px;
+    width: 80%;
+    margin: 20px 0;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    text-transform: capitalize;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.container button:hover {
+    background: #ffa000;
+    transition: .8s ease;
+  /* background-color: #0066ff;
+  border-color: #10707f;
+  box-shadow: 0 0 0 2px rgba(0,92,230,.5); */
+}
+
+.container button:focus {
+  width: 85%;
+  background-color: #0052cc;
+  border-color: #10707f;
+}
+
+@keyframes fadein {
+            from { opacity: 0; }
+            to   { opacity: 1; }
+        }
+
+        /* Firefox */
+        @-moz-keyframes fadein {
+            from { opacity: 0; }
+            to   { opacity: 1; }
+        }
+
+        /* Safari and Chrome */
+        @-webkit-keyframes fadein {
+            from { opacity: 0; }
+            to   { opacity: 1; }
+        }
+
+        /* Internet Explorer */
+        @-ms-keyframes fadein {
+            from { opacity: 0; }
+            to   { opacity: 1; }
+        }​
+
+     ​

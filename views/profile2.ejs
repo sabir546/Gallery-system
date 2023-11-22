@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/profile.css">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <div class="header d-flex flex-column align-items-center">
+        <h1 class="display-6 mt-3 mb-0">lightGallery</h1>
+        <p class="lead mt-2 mb-4">
+          lightGallery is a feature-rich, modular JavaScript gallery plugin for
+          building beautiful image and video galleries for the web and the mobile
+        </p>
+        <a class="btn mb-5 btn-outline-primary" href="https://github.com/sachinchoolur/lightGallery" target="_blank">View on GitHub</a>
+      </div>
+      <div class="gallery-container d-flex align-items-center justify-content-center" id="gallery-container">
+       
+
+        <form action="/uploadFile" method="post" enctype="multipart/form-data">
+
+            <input name="avatar" type="file">
+    
+            <button>submit</button>
+    
+        </form>
+    
+        <% avatar.forEach(function(m){ %>
+    
+            <div class="card">
+                <img height="200px" width="200px" src="/uploads/<%= m.avatar %>" alt="not found">
+            </div>
+    
+    <a href="/delete/<%=m._id%>">delete</a>
+    &nbsp; &nbsp;&nbsp;
+    <a href="/update/<%=m._id%>">update</a>
+    
+    
+    
+            <% })%>
+
+
+      </div>
+      
+      
+     <script src="../public/javascripts/profile.js"></script> 
+</body>
+</html>

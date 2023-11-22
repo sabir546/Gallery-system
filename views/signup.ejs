@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/signup.css">
+    <title>Signup</title>
+</head>
+<body>
+    
+    <div id="page1">
+
+        <nav class="dropdownmenu">
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/signin">signin</a></li>
+              <li><a href="/signup">signup</a></a>
+               <li><a href="/profile">profile</a></li>
+              </li>
+            
+            </ul>
+          </nav>
+        
+            <!-- singin form -->
+    <div class="login-box">
+        <h1 class="login-title">Sign-Up</h1>
+        <form id="form" action="/signup" method="post">
+            <!-- user name input -->
+            <label for="email">email</label>
+            <input type="email" name="email" id="email" class="input-field">
+
+             <!-- email input -->
+             <label for="email">username</label>
+             <input type="text" name="username" id="email" class="input-field">
+ 
+            <!-- password input-->
+            <label for="password">password</label>
+            <input type="password" name="password" id="password" class="input-field">
+            
+            <!-- submit input-->
+            <input type="submit" value="signup" class="btn-submit">
+           
+            <!-- <a href="/forget" class="link-login">forgot password</a> -->
+            <!-- <a href="/signin" class="link-signin">signin</a> -->
+       
+        </form>
+    </div> 
+
+
+
+    </div>
+</body>
+</html>
