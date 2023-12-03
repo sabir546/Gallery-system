@@ -105,7 +105,7 @@ router.post('/reset',isLoggedIn, async function(req, res, next) {
 
 const upload= require('../utils/multer').single("avatar")
 
-router.get('/profile', isLoggedIn, async function(req, res, next) {
+router.get('/profile',  async function(req, res, next) {
   try {
     const medias=await User.find()
     console.log(medias)
@@ -150,7 +150,7 @@ router.post("/uploadFile", function (req, res, next) {
  router.post("/update/:id", isLoggedIn,function (req, res, next) {
  try {
   console.log("filename",req.file.filename);
-  if(req.user.avatar !== " default.jpg")
+  if(req.user.avatar !== "deafult.jpg")
   {
     fs.unlinkSync('./public/uploads/'+req.user.avatar);
   }

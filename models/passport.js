@@ -6,7 +6,7 @@ const usermodel1= new mongoose.Schema({
    password:String,
    avatar:{
       type:String,
-      default:'default.jpg'
+      default:'deafult.jpg'
    } ,
 }
 ,
